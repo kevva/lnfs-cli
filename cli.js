@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 'use strict';
 var path = require('path');
+var lnfs = require('lnfs');
 var meow = require('meow');
-var lnfs = require('./');
 
 var cli = meow({
 	help: [

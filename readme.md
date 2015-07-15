@@ -1,65 +1,18 @@
-# lnfs [![Build Status](http://img.shields.io/travis/kevva/lnfs.svg?style=flat)](https://travis-ci.org/kevva/lnfs)
+# lnfs-cli [![Build Status](http://img.shields.io/travis/kevva/lnfs-cli.svg?style=flat)](https://travis-ci.org/kevva/lnfs-cli)
 
 > Safely force create symlinks
+
+*See [lnfs](https://github.com/kevva/lnfs) for the programmatic API and issue tracker.*
 
 
 ## Install
 
 ```
-$ npm install --save lnfs
+$ npm install --global lnfs-cli
 ```
 
 
 ## Usage
-
-```js
-var symlink = require('lnfs');
-
-symlink('foo.txt', 'bar.txt', function (err) {
-	console.log('Symlink successfully created!');
-});
-
-symlink.sync('foo.txt', 'bar.txt');
-```
-
-
-## API
-
-### lnfs(src, dest, type, callback)
-
-#### src
-
-*Required*  
-Type: `string`
-
-Path to source file.
-
-#### dest
-
-*Required*  
-Type: `string`
-
-Path to destination.
-
-#### type
-
-Type: `string`  
-Default: `file`
-
-Can be set to `dir`, `file`, or `junction` and is only available on Windows (ignored on other platforms).
-
-#### callback(err)
-
-Type: `function`
-
-Returns nothing but a possible exception.
-
-
-## CLI
-
-```
-$ npm install --global lnfs
-```
 
 ```
 $ lnfs --help

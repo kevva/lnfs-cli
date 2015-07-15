@@ -1,0 +1,41 @@
+{
+  "name": "lnfs-cli",
+  "version": "1.0.0",
+  "description": "Safely force create symlinks",
+  "license": "MIT",
+  "repository": "kevva/lnfs-cli",
+  "author": {
+    "email": "kevinmartensson@gmail.com",
+    "name": "Kevin Martensson",
+    "url": "github.com/kevva"
+  },
+  "bin": {
+    "lnfs": "cli.js"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "files": [
+    "cli.js"
+  ],
+  "keywords": [
+    "app",
+    "cli",
+    "cli-app",
+    "linux",
+    "lnfs",
+    "osx",
+    "symlink",
+    "windows"
+  ],
+  "dependencies": {
+    "lnfs": "^1.1.0",
+    "meow": "^3.3.0"
+  },
+  "devDependencies": {
+    "ava": "^0.0.4"
+  }
+}
