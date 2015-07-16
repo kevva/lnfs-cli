@@ -10,7 +10,8 @@ var cli = meow({
 		'  $ lnfs <file> <target>',
 		'',
 		'Example',
-		'  $ lnfs foo.txt bar.txt'
+		'  $ lnfs foo.txt bar.txt',
+		'  /home/unicorn/bar.txt -> /home/unicorn/foo.txt'
 	]
 });
 
