@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* eslint-disable no-mixed-spaces-and-tabs */
 'use strict';
 const path = require('path');
 const lnfs = require('lnfs');
