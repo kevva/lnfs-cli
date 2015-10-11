@@ -1,13 +1,9 @@
-'use strict';
-const execFile = require('child_process').execFile;
-const path = require('path');
-const test = require('ava');
+import {execFile} from 'child_process';
+import path from 'path';
+import pify from 'pify';
+import test from 'ava';
 
-test('show help screen', function (t) {
-	t.plan(2);
-
-	execFile(path.join(__dirname, 'cli.js'), ['--help'], function (err, stdout) {
-		t.assert(!err, err);
-		t.assert(/afely force create symlinks/.test(stdout), stdout);
-	});
+test('show help screen', async t => {
+	const stdout = await pify(execFile)(path.join(__dirname, 'cli.js'), ['--help']);
+	t.regexTest(/Safely force create symlinks/, stdout);
 });
