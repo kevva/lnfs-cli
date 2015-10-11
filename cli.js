@@ -18,11 +18,6 @@ if (cli.input.length < 2) {
 	process.exit(1);
 }
 
-lnfs(cli.input[0], cli.input[1], err => {
-	if (err) {
-		console.error(err.message);
-		process.exit(1);
-	}
-
+lnfs(cli.input[0], cli.input[1]).then(() => {
 	console.log(`${path.resolve(cli.input[1])} -> ${path.resolve(cli.input[0])}`);
 });

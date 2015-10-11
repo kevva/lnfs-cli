@@ -32,7 +32,7 @@
     "windows"
   ],
   "dependencies": {
-    "lnfs": "^2.0.0",
+    "lnfs": "^3.0.0",
     "meow": "^3.3.0"
   },
   "devDependencies": {
