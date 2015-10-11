@@ -1,7 +1,7 @@
 'use strict';
-var execFile = require('child_process').execFile;
-var path = require('path');
-var test = require('ava');
+const execFile = require('child_process').execFile;
+const path = require('path');
+const test = require('ava');
 
 test('show help screen', function (t) {
 	t.plan(2);
