@@ -1,9 +1,7 @@
-import {execFile} from 'child_process';
-import path from 'path';
-import pify from 'pify';
+import execa from 'execa';
 import test from 'ava';
 
 test('show help screen', async t => {
-	const stdout = await pify(execFile)(path.join(__dirname, 'cli.js'), ['--help']);
-	t.regexTest(/Safely force create symlinks/, stdout);
+	const ret = await execa('./cli.js', ['--help']);
+	t.regexTest(/Safely force create symlinks/, ret.stdout);
 });

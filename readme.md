@@ -2,8 +2,6 @@
 
 > Safely force create symlinks
 
-*See [lnfs](https://github.com/kevva/lnfs) for the programmatic API and issue tracker.*
-
 
 ## Install
 
@@ -24,6 +22,11 @@ $ lnfs --help
     $ lnfs foo.txt bar.txt
     /home/unicorn/bar.txt -> /home/unicorn/foo.txt
 ```
+
+
+## Related
+
+* [lnfs](https://github.com/kevva/lnfs) - API for this module
 
 
 ## License
