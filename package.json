@@ -1,43 +1,43 @@
 {
-  "name": "lnfs-cli",
-  "version": "1.0.1",
-  "description": "Safely force create symlinks",
-  "license": "MIT",
-  "repository": "kevva/lnfs-cli",
-  "author": {
-    "email": "kevinmartensson@gmail.com",
-    "name": "Kevin Martensson",
-    "url": "github.com/kevva"
-  },
-  "bin": {
-    "lnfs": "cli.js"
-  },
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "files": [
-    "cli.js"
-  ],
-  "keywords": [
-    "app",
-    "cli",
-    "cli-app",
-    "linux",
-    "lnfs",
-    "osx",
-    "symlink",
-    "windows"
-  ],
-  "dependencies": {
-    "lnfs": "^3.0.0",
-    "meow": "^3.3.0"
-  },
-  "devDependencies": {
-    "ava": "*",
-    "execa": "^0.1.1",
-    "xo": "*"
-  }
+	"name": "lnfs-cli",
+	"version": "1.0.1",
+	"description": "Safely force create symlinks",
+	"license": "MIT",
+	"repository": "kevva/lnfs-cli",
+	"author": {
+		"email": "kevinmartensson@gmail.com",
+		"name": "Kevin Mårtensson",
+		"url": "github.com/kevva"
+	},
+	"bin": {
+		"lnfs": "cli.js"
+	},
+	"engines": {
+		"node": ">=4"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"cli.js"
+	],
+	"keywords": [
+		"app",
+		"cli",
+		"cli-app",
+		"linux",
+		"lnfs",
+		"osx",
+		"symlink",
+		"windows"
+	],
+	"dependencies": {
+		"lnfs": "^3.0.0",
+		"meow": "^3.3.0"
+	},
+	"devDependencies": {
+		"ava": "*",
+		"execa": "^0.7.0",
+		"xo": "*"
+	}
 }
