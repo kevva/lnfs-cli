@@ -8,3 +8,7 @@ test('symlink a file', async t => {
 	t.is(file, __filename);
 	await fs.unlinkSync('tmp.js');
 });
+
+test('fail on invalid type', async t => {
+	await t.throws(execa('./cli.js', ['a', 'b', '--type', 'unicorn']), /option is invalid/);
+});
