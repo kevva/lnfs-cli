@@ -13,7 +13,7 @@ const cli = meow(`
 	  /home/unicorn/bar.txt -> /home/unicorn/foo.txt
 
 	Options
-	  --type  Can be set to dir, file, or junction and is only available on Windows (ignored on other platforms).
+	  --type  Can be set to dir, file, or junction and is only available on Windows (ignored on other platforms)
 `);
 
 if (cli.input.length < 2) {

@@ -15,12 +15,15 @@ $ npm install --global lnfs-cli
 ```
 $ lnfs --help
 
-  Usage
-    $ lnfs <file> <target>
+	Usage
+		$ lnfs <file> <target>
 
-  Example
-    $ lnfs foo.txt bar.txt
-    /home/unicorn/bar.txt -> /home/unicorn/foo.txt
+	Example
+		$ lnfs foo.txt bar.txt
+		/home/unicorn/bar.txt -> /home/unicorn/foo.txt
+
+	Options
+		--type  Can be set to dir, file, or junction and is only available on Windows (ignored on other platforms)
 ```
 
 
