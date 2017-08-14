@@ -11,6 +11,9 @@ const cli = meow(`
 	Example
 	  $ lnfs foo.txt bar.txt
 	  /home/unicorn/bar.txt -> /home/unicorn/foo.txt
+
+	Options
+	  --type  Can be set to dir, file, or junction and is only available on Windows (ignored on other platforms).
 `);
 
 if (cli.input.length < 2) {
@@ -18,6 +21,6 @@ if (cli.input.length < 2) {
 	process.exit(1);
 }
 
-lnfs(cli.input[0], cli.input[1]).then(() => {
+lnfs(cli.input[0], cli.input[1], cli.flags.type).then(() => {
 	console.log(`${path.resolve(cli.input[1])} -> ${path.resolve(cli.input[0])}`);
 });
